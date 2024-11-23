@@ -1,0 +1,20 @@
+#include<stdio.h>
+int digitsum(int number){
+	int sum = 0;
+	while (number>0);
+{
+int val=number%10;
+sum+=val;
+number=number/10;
+}
+return sum;
+}
+
+int main(){
+	int num;
+	//printf("enter a number:");
+	scanf("%d",&num);
+	int result=digitsum(num);
+printf("Sum of %d is %d",num,result);
+	return 0;
+}
